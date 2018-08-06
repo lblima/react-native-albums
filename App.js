@@ -3,7 +3,7 @@ import React from 'react';
 import Header from './src/components/header';
 
 const App = () => (
-  <Header />
+  <Header headerText={'Albums!'} />
 );
 
 export default App;
