@@ -22,8 +22,8 @@ class AlbumList extends Component {
     render() {
         if (this.state.albums.length === 0) {
             return (
-                <View>
-                    <Text>Loading...</Text>
+                <View style={styles.loadingStyle}>
+                    <Text style={styles.textStyle}>Loading...</Text>
                 </View>
             );
         }
@@ -35,5 +35,15 @@ class AlbumList extends Component {
         );
     }
 }
+
+const styles = {
+    loadingStyle: {
+        alignItems: 'center',
+        paddingTop: 20
+    },
+    textStyle: {
+        fontSize: 20
+    }
+};
 
 export default AlbumList;
